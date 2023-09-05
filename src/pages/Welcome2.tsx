@@ -1,7 +1,15 @@
 import * as React from 'react'
-import { NavLink } from 'react-router-dom'
+import styled from 'styled-components'
+
+const Bordered = styled.div`
+  border: 1px solid blue;
+`
 export const Welcome2: React.FC = () => {
   return (
-      <div style={{ border: '1px solid red' }}> 2 <NavLink to="/welcome/3">下一页</NavLink> </div>
+    <div>
+      <Bordered>
+        沙鲨记账2
+      </Bordered>
+    </div>
   )
 }
