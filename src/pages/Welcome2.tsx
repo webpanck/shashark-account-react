@@ -1,15 +1,10 @@
 import * as React from 'react'
-import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
-const Bordered = styled.div`
-  border: 1px solid blue;
-`
 export const Welcome2: React.FC = () => {
   return (
     <div>
-      <Bordered>
-        沙鲨记账2
-      </Bordered>
+      2 <Link to="/welcome/3">下一页</Link>
     </div>
   )
 }

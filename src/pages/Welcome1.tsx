@@ -1,9 +1,15 @@
 import * as React from 'react'
-import s from './Welcome1.module.scss'
+import { Link } from 'react-router-dom'
+import p1 from '../assets/images/welcome1.svg'
+
 export const Welcome1: React.FC = () => {
   return (
-      <div className={s.wrapper}>
-        沙鲨记账
-      </div>
+    <div>
+      <img src={p1} />
+      <h2>
+        会挣钱 <br/>
+        还要会省钱
+      </h2>
+    </div>
   )
 }
